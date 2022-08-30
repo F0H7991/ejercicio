@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- 
+  ejercicio uno ; programa que pida dos numeros y que nos diga cual es el mayor , el menor y si son iguales
+
+  ejercico dos ; al programa anterior : si los numeros no son un numero o son menores o iguales a cero, nos los vulve a pedir 
+  -->
+    <script>
+      function evaluateNumbers(x, y) {
+        if (x == y ) {  //evaluando igualdad
+          alert ("son iguales ")
+        } else if (x > y) {  // evaluando x >
+          alert (" el numero mayor es: "+ x)
+        } else if (x < y) {  // evaluando y >
+          alert (" el numero mayor es: "+ y)
+        } 
+      }
+
+      alert("bienvenido, evaluacion de numeros ")
+      let x = prompt ("inserte un numero")
+      let y = prompt ("inserte otro numero")
+      
+      if( isNaN(x) || isNaN(y) || x <= 0 || y <= 0 ) {
+        alert("Error no se han especificado bien los numeros")
+        x = prompt ("inserte un numero")
+        y = prompt ("inserte otro numero")
+        evaluateNumbers(x, y)
+      } else {
+        evaluateNumbers(x, y)
+      }
+    </script>
+</body>
+</html>
+
+
+
